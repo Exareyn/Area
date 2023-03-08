@@ -1,0 +1,52 @@
+services:
+  mysql_db:
+    build: ./server/Database/
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - backend
+  server:
+    build: ./server/API/
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+    environment:
+      - MYSQL_HOST=mysql_db
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=AreaDB
+    depends_on:
+      - mysql_db
+  # client_mobile:
+  #   build: ./frontmobile/
+  #   volumes:
+  #     - front-data:/frontmobile/
+  client_web:
+    build: ./front-web/
+    ports:
+      - "8081:8081"
+    depends_on:
+      - server
+      # - client_mobile
+    volumes:
+      - front-data:/front-web/
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8082:8080"
+    networks:
+      - backend
+    depends_on:
+      - mysql_db
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  front-data:
+  db-data:

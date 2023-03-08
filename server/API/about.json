@@ -1,0 +1,73 @@
+{
+    "client": {
+        "host": "localhost:8080"
+    },
+    "server": {
+        "current_time": ,
+        "services": [
+            {
+                "name": "facebook",
+                "actions": [
+                ],
+                " reactions ": [
+                    {
+                        " name ": "send_post",
+                        " description ": "send a post on your facebook page"
+                    }
+                ]
+            },
+            {
+                "name": "twitter",
+                "actions": [
+                    {
+                        "name": "getlasttweet",
+                        "description": "get the last tweet from a given account"
+                    },
+                    {
+                        "name": "gettopic",
+                        "description": ""
+                    }
+                ],
+                "reactions": [
+                    {
+                        "name": "send_tweet",
+                        "description": "send a tweet on your twitter account"
+                    },
+                    {
+                        "name": "retweet",
+                        "description": "retweet last tweet from action 1 or 2"
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "name": "discord",
+                    "actions": [],
+                    "reactions": [
+                        {
+                            "name": "send_message",
+                            "description": "send a message on your discord server"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "name": "github",
+                    "actions": [
+                        {
+                            "name": "getlastcommit",
+                            "description": "get the last commit from a given repository"
+                        }
+                    ],
+                    "reactions": []
+                }
+            },
+            {
+                "google": {
+                    "name":
+                }
+            }
+        ]
+    }
+}

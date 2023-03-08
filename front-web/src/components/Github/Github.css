@@ -1,0 +1,12 @@
+.github {
+    list-style: none;
+    background-color: #EFF0F3;
+    color: black;
+    font-size: 25px;
+    padding: 14px;
+    margin: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+}

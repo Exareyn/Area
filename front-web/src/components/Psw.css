@@ -1,0 +1,153 @@
+.App {
+    text-align: center;
+    background-color: #EFF0F3;
+    background-size: cover;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+  /*    animation: App-logo-spin infinite 20s linear;*/
+      height: 100px;
+    }
+  }
+  .App-header {
+    background-color: #EFF0F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  /*  justify-content: center;*/
+    font-size: calc(10px + 2vmin);
+    padding: 1%;
+  }
+  
+  .App-contain {
+    background-color: #ffffff;
+    width: 90%;
+    padding: 1%;
+    border-radius: 10px;
+    display:flex;
+    
+  }
+  .blck_form {
+    float: right;
+    width: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+    align-self: center;
+  }
+  
+  .blck_sprt {
+    float:left;
+    width: 8%;
+    align-self: center;
+    margin: auto;
+  }
+  
+  .blck_gafa {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: auto;
+  }
+  
+  .form-box input{
+    background-color: #EFF0F3;
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    align-self: center;
+  }
+  .form-box submit{
+    display: block;
+    width: 200%;
+    padding: 10px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+  
+  
+  
+  .frgpsw {
+    padding: 10px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .sgn {
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .title {
+    margin: 10px 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #FF8E3C;
+    color: black;
+    font-size: 25px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .ggle {
+    background-color: #EFF0F3;
+    color: black;
+    font-size: 25px;
+    padding: 14px;
+    margin: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ggle:hover {
+    background-color: #eff0f31e;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #c77032;
+  }
+  
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

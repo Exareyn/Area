@@ -1,0 +1,12 @@
+services:
+  server:
+    build: ./server/
+    ports:
+      - "8080:8080"
+  # client_mobile:
+  # client_web:
+  #   ports: 8081
+  #   depends_on:
+  #     - server
+  #     - client_mobile
+# volumes:
